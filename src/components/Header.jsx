@@ -10,19 +10,28 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-[#6366f1] h-32 flex justify-between items-center px-4 dark:bg-black">
+    <div
+      className={`h-32 flex justify-between items-center px-4 ${
+        dark ? "bg-black" : "bg-[#6366f1]"
+      }`}
+    >
       <div className="flex-1 flex justify-center">
-        <p className="text-5xl font-bold text-white dark:text-gray-200">
+        <p
+          className={`text-5xl font-bold ${
+            dark ? "text-gray-200" : "text-white"
+          }`}
+        >
           Book Generator API
         </p>
       </div>
       <div>
         <button
-          onClick={() => darkModeHandler()}
-          className="bg-white text-black dark:bg-black dark:text-white font-bold py-2 px-4 rounded"
+          onClick={darkModeHandler}
+          className={`font-bold py-2 px-4 rounded flex items-center ${
+            dark ? "bg-gray-800 text-white" : "bg-white text-black"
+          }`}
         >
-          {dark && <IoSunny />}
-          {!dark && <IoMoon />}
+          {dark ? <IoSunny size={24} /> : <IoMoon size={24} />}
         </button>
       </div>
     </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <div className="flex justify-center items-center h-full p-4 sm:p-6">
-      <div className="bg-[#1e293b] p-6 rounded-lg shadow-lg max-w-4xl my-7 w-full border border-[#334155]">
+      <div className="bg-[#1e293b] dark:bg-[#0f172a] p-6 rounded-lg shadow-lg max-w-4xl my-7 w-full border border-[#334155] dark:border-[#4b5563]">
         <div className="text-[#a5b4fc] font-bold text-2xl mb-5">
           API Pricing
         </div>
@@ -15,34 +15,34 @@ const Pricing = () => {
           </p>
 
           <div className="overflow-x-auto mb-7">
-            <table className="min-w-full bg-[#1e293b] rounded-lg overflow-hidden border-[#334155]">
+            <table className="min-w-full bg-[#1e293b] dark:bg-[#0f172a] rounded-lg overflow-hidden border-[#334155] dark:border-[#4b5563]">
               <thead>
-                <tr className="bg-[#6366f1] text-[#e2e8f0] text-sm border border-[#334155]">
+                <tr className="bg-[#6366f1] text-[#e2e8f0] text-sm border border-[#334155] dark:border-[#4b5563]">
                   <th className="px-6 py-3 text-left">API</th>
                   <th className="px-6 py-3 text-left">MODEL</th>
                   <th className="px-6 py-3 text-left">PRICE PER 1K TOKENS</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="text-[#e2e8f0] border border-[#334155]">
+                <tr className="text-[#e2e8f0] border border-[#334155] dark:border-[#4b5563]">
                   <td className="px-6 py-4">OpenAI</td>
                   <td className="px-6 py-4">GPT-3.5</td>
                   <td className="px-6 py-4">$0.002</td>
                 </tr>
 
-                <tr className="text-[#e2e8f0] border border-[#334155]">
+                <tr className="text-[#e2e8f0] border border-[#334155] dark:border-[#4b5563]">
                   <td className="px-6 py-4">OpenAI</td>
                   <td className="px-6 py-4">GPT-4</td>
                   <td className="px-6 py-4">$0.03</td>
                 </tr>
 
-                <tr className="text-[#e2e8f0] border border-[#334155]">
+                <tr className="text-[#e2e8f0] border border-[#334155] dark:border-[#4b5563]">
                   <td className="px-6 py-4">Together AI</td>
                   <td className="px-6 py-4">Llama-2-70b</td>
                   <td className="px-6 py-4">$0.0008</td>
                 </tr>
 
-                <tr className="text-[#e2e8f0] border border-[#334155]">
+                <tr className="text-[#e2e8f0] border border-[#334155] dark:border-[#4b5563]">
                   <td className="px-6 py-4">Together AI</td>
                   <td className="px-6 py-4">Llama-2-13b</td>
                   <td className="px-6 py-4">$0.0006</td>

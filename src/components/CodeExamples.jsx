@@ -3,22 +3,20 @@ import React from "react";
 const CodeExamples = () => {
   return (
     <div className="flex justify-center items-center h-full p-4 sm:p-6">
-      <div className="bg-[#1e293b] p-6 rounded-lg shadow-lg max-w-4xl my-7 w-full border border-[#334155]">
+      <div className="bg-[#1e293b] dark:bg-[#0f172a] p-6 rounded-lg shadow-lg max-w-4xl my-7 w-full border border-[#334155] dark:border-[#4b5563]">
         <div className="text-[#a5b4fc] font-bold text-2xl mb-7">
           Code Examples
         </div>
 
         <div>
-          
           <div className="mb-7">
+            <div className="text-[#a5b4fc] font-bold text-xl mb-4">Python</div>
 
-          <div className="text-[#a5b4fc] font-bold text-xl mb-4">Python</div>
-
-          <div className="flex justify-center items-center h-full border border-[#334155]">
-            <div className="bg-[#1e293b] rounded-lg shadow-lg max-w-4xl w-full">
-              <pre className="bg-[#0f172a] text-[#e2e8f0] p-4 rounded-md overflow-x-auto">
-                <code>
-                  {`
+            <div className="flex justify-center items-center h-full border border-[#334155] dark:border-[#4b5563]">
+              <div className="bg-[#1e293b] dark:bg-[#0f172a] rounded-lg shadow-lg max-w-4xl w-full">
+                <pre className="bg-[#0f172a] text-[#e2e8f0] p-4 rounded-md overflow-x-auto">
+                  <code>
+                    {`
 import requests
 
 API_KEY = "your_api_key_here"
@@ -45,23 +43,23 @@ if response.status_code == 200:
     print(f"Book generation started. Job ID: {result['job_id']}")
 else:
     print(f"Error: {response.status_code} - {response.text}")
-                  `}
-                </code>
-              </pre>
+                    `}
+                  </code>
+                </pre>
+              </div>
             </div>
-          </div>
           </div>
 
           <div>
-          <div className="text-[#a5b4fc] font-bold text-xl mb-4">
-            JavaScript (Node.js)
-          </div>
+            <div className="text-[#a5b4fc] font-bold text-xl mb-4">
+              JavaScript (Node.js)
+            </div>
 
-          <div className="flex justify-center items-center h-full border border-[#334155]">
-            <div className="bg-[#1e293b] rounded-lg shadow-lg max-w-4xl w-full">
-              <pre className="bg-[#0f172a] text-[#e2e8f0] p-4 rounded-md overflow-x-auto">
-                <code>
-{`
+            <div className="flex justify-center items-center h-full border border-[#334155] dark:border-[#4b5563]">
+              <div className="bg-[#1e293b] dark:bg-[#0f172a] rounded-lg shadow-lg max-w-4xl w-full">
+                <pre className="bg-[#0f172a] text-[#e2e8f0] p-4 rounded-md overflow-x-auto">
+                  <code>
+                    {`
 const axios = require('axios');
 
 const API_KEY = 'your_api_key_here';
@@ -87,13 +85,12 @@ axios.post(API_ENDPOINT, data, { headers })
     .catch(error => {
         console.error('Error:', error.response ? error.response.data : error.message);
     });
-`}
-                </code>
-              </pre>
+                    `}
+                  </code>
+                </pre>
+              </div>
             </div>
           </div>
-          </div>
-
         </div>
       </div>
     </div>

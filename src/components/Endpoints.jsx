@@ -3,7 +3,7 @@ import React from "react";
 const Endpoints = () => {
   return (
     <div className="flex justify-center items-center h-full p-4 sm:p-6">
-      <div className="bg-[#1e293b] p-4 sm:p-6 rounded-lg shadow-lg max-w-4xl my-7 w-full border border-[#334155]">
+      <div className="bg-[#1e293b] dark:bg-[#0f172a] p-4 sm:p-6 rounded-lg shadow-lg max-w-4xl my-7 w-full border border-[#334155] dark:border-[#4b5563]">
         <div className="text-[#a5b4fc] font-bold text-xl sm:text-2xl mb-3 sm:mb-5">
           Endpoints
         </div>
@@ -14,10 +14,10 @@ const Endpoints = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mt-3">
-            <button className="bg-[#22d3ee] text-black font-bold px-4 py-2 rounded w-full sm:w-auto">
+            <button className="bg-[#22d3ee] text-black dark:bg-[#1e40af] dark:text-white font-bold px-4 py-2 rounded w-full sm:w-auto">
               Post
             </button>
-            <button className="font-bold text-[#e2e8f0] px-3 py-2 sm:py-3 bg-[#374151] rounded-md w-full sm:w-auto">
+            <button className="font-bold text-[#e2e8f0] px-3 py-2 sm:py-3 bg-[#374151] dark:bg-[#1f2937] rounded-md w-full sm:w-auto">
               /api/generate-book
             </button>
           </div>
@@ -29,9 +29,9 @@ const Endpoints = () => {
           </div>
 
           <div className="overflow-x-auto mb-4">
-            <table className="min-w-full bg-[#1e293b] rounded-lg overflow-hidden border-[#334155]">
+            <table className="min-w-full bg-[#1e293b] dark:bg-[#0f172a] rounded-lg overflow-hidden border-[#334155] dark:border-[#4b5563]">
               <thead>
-                <tr className="bg-[#6366f1] text-[#e2e8f0] text-xs sm:text-sm border border-[#334155]">
+                <tr className="bg-[#6366f1] dark:bg-[#4f46e5] text-[#e2e8f0] text-xs sm:text-sm border border-[#334155] dark:border-[#4b5563]">
                   <th className="px-4 py-2 sm:px-6 sm:py-3 text-left">
                     PARAMETER
                   </th>
@@ -42,7 +42,7 @@ const Endpoints = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr className="text-[#e2e8f0] border border-[#334155]">
+                <tr className="text-[#e2e8f0] border border-[#334155] dark:border-[#4b5563]">
                   <td className="px-4 py-2 sm:px-6 sm:py-4 text-[#22d3ee]">
                     api
                   </td>
@@ -52,7 +52,7 @@ const Endpoints = () => {
                   </td>
                 </tr>
 
-                <tr className="text-[#e2e8f0] border border-[#334155]">
+                <tr className="text-[#e2e8f0] border border-[#334155] dark:border-[#4b5563]">
                   <td className="px-4 py-2 sm:px-6 sm:py-4 text-[#22d3ee]">
                     model
                   </td>
@@ -63,7 +63,7 @@ const Endpoints = () => {
                   </td>
                 </tr>
 
-                <tr className="text-[#e2e8f0] border border-[#334155]">
+                <tr className="text-[#e2e8f0] border border-[#334155] dark:border-[#4b5563]">
                   <td className="px-4 py-2 sm:px-6 sm:py-4 text-[#22d3ee]">
                     topic
                   </td>
@@ -73,7 +73,7 @@ const Endpoints = () => {
                   </td>
                 </tr>
 
-                <tr className="text-[#e2e8f0] border border-[#334155]">
+                <tr className="text-[#e2e8f0] border border-[#334155] dark:border-[#4b5563]">
                   <td className="px-4 py-2 sm:px-6 sm:py-4 text-[#22d3ee]">
                     language
                   </td>
@@ -83,7 +83,7 @@ const Endpoints = () => {
                   </td>
                 </tr>
 
-                <tr className="text-[#e2e8f0] border border-[#334155]">
+                <tr className="text-[#e2e8f0] border border-[#334155] dark:border-[#4b5563]">
                   <td className="px-4 py-2 sm:px-6 sm:py-4 text-[#22d3ee]">
                     word_count
                   </td>
@@ -101,7 +101,7 @@ const Endpoints = () => {
               Response
             </div>
 
-            <div className="border border-[#334155] rounded-lg p-4 sm:p-6">
+            <div className="border border-[#334155] dark:border-[#4b5563] rounded-lg p-4 sm:p-6">
               <pre className="bg-[#0f172a] text-[#e2e8f0] p-4 rounded-md overflow-x-auto">
                 <code>
                   {`{
